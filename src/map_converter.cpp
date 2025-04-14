@@ -35,9 +35,9 @@ public:
         
         if (val == -1) {
           output_map.at<int8_t>(y, x) = -1;  // 保持-1表示未知
-        } else if (val >= 0 && val <= 20) {
+        } else if (val >= 0 && val <= 30) {
           output_map.at<int8_t>(y, x) = 0;    // 空闲区域
-        } else if (val >= 21 && val <= 64) {
+        } else if (val >= 31 && val <= 64) {
           output_map.at<int8_t>(y, x) = -1;   // 未知区域
         } else if (val >= 65 && val <= 100) {
           output_map.at<int8_t>(y, x) = 100;  // 占据区域
